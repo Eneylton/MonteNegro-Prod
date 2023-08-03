@@ -1,0 +1,65 @@
+  <div class="col-4">
+                     <div class="form-group">
+                        <label>Regiao</label>
+                        <select class="form-control select" style="width: 100%;" name="regioes" id="regioes">
+                           <option value=""> Selecione uma região </option>
+                           <?php
+
+                           foreach ($regioes as $item) {
+                              echo '<option value="' . $item->id . '">' . $item->nome . '</option>';
+                           }
+                           ?>
+
+                        </select>
+                     </div>
+
+                  </div>
+                  <div class="col-4">
+                     <div class="form-group">
+
+                        <label>Rota</label>
+                        <select class="form-control" name="rota" id="rota"></select>
+                     </div>
+                  </div>
+				  
+				  
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+<script>
+$("#regioes").on("change", function(){
+   
+   var idEstado = $("#regioes").val();
+   $.ajax({
+       url:'entregador-list.php',
+       type:'POST',
+       data:{id:idEstado},
+      
+       success:function(data){
+           $("#rota").css({'display':'block'});
+           $("#rota").html(data);
+       }
+   })
+
+});
+
+</script>
+
+
+<script>
+$("#regioes_id").on("change", function(){
+   
+   var idEstado = $("#regioes_id").val();
+   $.ajax({
+       url:'entregador-list.php',
+       type:'POST',
+       data:{id:idEstado},
+      
+       success:function(data){
+           $("#rotas_id").css({'display':'block'});
+           $("#rotas_id").html(data);
+       }
+   })
+
+});
+
+</script>

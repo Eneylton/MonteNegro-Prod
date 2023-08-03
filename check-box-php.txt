@@ -1,0 +1,37 @@
+foreach ($servicos as $item) {
+
+  $result_serv .= '
+  <div class="custom-control custom-radio custom-control-inline">
+  <input class="form-check-input" type="checkbox" value="' . $item->id . '" name="serv[]" id="[' . $item->id . ']">
+  <label class="form-check-label">' . $item->nome . ' - R$ ' . number_format($item->valor, "2", ",", ".") . '</label>
+  </div>
+   
+  ';
+}
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+      
+    if (isset($_POST['serv'])) {
+	
+	foreach ($_POST['serv'] as $id) {
+	
+	$servicos = Servico::getID($id);
+	
+	$serv_id = $servicos->id;
+	
+	$item = new Servico;
+	
+	$item->clientes_id = $_POST['clientes_id'];    
+	$item->mecanicos_id = $_POST['mecanicos_id'];    
+	$item->servicos_id = $id;
+    
+	$item->cadastar();
+		
+	
+	}
+	
+	
+	}
+	
+	

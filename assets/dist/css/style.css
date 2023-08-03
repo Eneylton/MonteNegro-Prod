@@ -1,0 +1,185 @@
+.dark-mode .custom-control-label::before,
+.dark-mode .custom-file-label,
+.dark-mode .custom-file-label::after,
+.dark-mode .custom-select,
+.dark-mode .form-control,
+.dark-mode .input-group-text {
+  background-color: #ffffff !important;
+  color: #353333;
+  
+}
+
+.barra{
+  color:#000;
+  font-family: barcode font !important;
+  font-size: 50px;;
+}
+
+.chartMenu p {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.chartBox {
+  width: 700px;
+  padding: 20px;
+  border-radius: 20px;
+  border: solid 3px rgb(255, 255, 255);
+  background: white;
+}
+
+.alert-danger {
+  color: #fff;
+  background-color: #ff2a3e;
+  border-color: #fbafb6;
+}
+
+.dark-mode .card {
+  background-color: #555555;
+  color: #fff;
+}
+
+.card-purple:not(.card-outline) > .card-header {
+  background-color: rgb(10, 168, 18);
+}
+
+.card-header {
+  background-color: rgb(10, 168, 18);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 0.75rem 1.25rem;
+  position: relative;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  color: #fff;
+}
+
+button,
+select {
+  text-transform: uppercase;
+}
+
+.centro {
+  text-align: center;
+}
+
+.esquerda {
+  text-align: left;
+}
+
+.ocultar {
+  display: none;
+}
+
+.direita {
+  text-align: right;
+}
+
+.texto-grande {
+  text-transform: uppercase;
+}
+
+.qtd-40 {
+  font-size: 23px;
+
+  font-weight: bold;
+  width: 100px;
+}
+
+.t-100 {
+  width: 200px;
+}
+.t-150 {
+  width: 400px;
+}
+
+.MultiCheckBox {
+  border: 1px solid #e2e2e2;
+  padding: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.MultiCheckBox .k-icon {
+  font-size: 15px;
+  float: right;
+  font-weight: bolder;
+  margin-top: -7px;
+  height: 10px;
+  width: 14px;
+  color: #d4d4d4;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.MultiCheckBoxDetail {
+  display: none;
+  position: absolute;
+}
+
+.MultiCheckBoxDetailBody {
+  overflow-y: scroll;
+  width: 500px;
+}
+
+.MultiCheckBoxDetail .cont {
+  clear: both;
+  overflow: hidden;
+  padding: 6px;
+  padding: 6px;
+  padding: 6px;
+  background-color: #fff;
+}
+
+.MultiCheckBoxDetail .cont:hover {
+  background-color: #e6e6e6;
+}
+
+.MultiCheckBoxDetailBody > div > div {
+  float: left;
+  background-color: #fff;
+}
+
+.MultiCheckBoxDetail > div > div:nth-child(1) {
+  background-color: #fff;
+}
+
+.MultiCheckBoxDetailHeader {
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+  height: 40px;
+  background-color: #ff0000;
+  width: 500px;
+}
+
+.MultiCheckBoxDetailHeader > input {
+  position: absolute;
+  top: 10px;
+  left: 3px;
+  padding: 30px;
+}
+
+.MultiCheckBoxDetailHeader > div {
+  position: absolute;
+  top: 5px;
+  left: 24px;
+  color: #fff;
+}
+
+.menor {
+  width: 120px;
+  height: 43px;
+  font-size: 28px;
+  color: #ff0000;
+  background-color: rgb(199, 199, 199);
+}
+
+.vermelho {
+  color: #ff0000;
+  text-transform: uppercase;
+}
+
+.gd {
+  font-size: 27px;
+}
